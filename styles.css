@@ -23,12 +23,16 @@ body {
   width: 6.25rem;
   height: 6.25rem;
   background-color: purple;
-  background-image: url(images/new\ logo.psd);
+  background-image: url(images/MYlogo.png);
 }
 
 #pageheader .container {
   background-color: none;
   min-height: auto;
+  text-align: center;
+}
+
+#pageheader nav {
   text-align: center;
 }
 
@@ -109,9 +113,22 @@ blockquote + span {
 }
 
 audio {
-  display: block;
+  border: 5px solid plum;
+  background-color: white;
   margin: auto;
+  display: block;
+}
 
+@media screen (and min- width 600px;;) #pagecontent {
   background-color: red;
-  border: 5px solid red;
+}
+
+#career {
+  background-color: blue;
+}
+
+@media screen and (min-width: 1000px) {
+  #pagecontent {
+    background-color: blueviolet;
+  }
 }
