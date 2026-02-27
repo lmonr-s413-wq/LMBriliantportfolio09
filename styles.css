@@ -1,8 +1,16 @@
+/*Mobile view - Default  */
+:root {
+  --primary-color: red;
+  --secondary-color: lime;
+  --tertiary-color: purple;
+  --main-font: arial;
+}
+
 html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: purple;
+  background-color: var(--tertiary-color);
 }
 
 .container {
@@ -14,7 +22,7 @@ body {
 }
 
 #pageheader {
-  background-color: plum;
+  background-color: var (rebeccapurple);
   min-height: auto;
   padding: 1rem;
 }
@@ -24,10 +32,11 @@ body {
   height: 6.25rem;
   background-color: purple;
   background-image: url(images/MYlogo.png);
+  margin: auto;
 }
 
 #pageheader .container {
-  background-color: none;
+  background-color:none;
   min-height: auto;
   text-align: center;
 }
@@ -40,13 +49,13 @@ body {
   background-color: purple;
   min-height: 10rem;
   padding: 1rem;
-  background-image: url(Images/graduation.psd);
+  background-image: url(Images/graduation.png);
   background-size: cover;
   aspect-ratio: 16 / 9;
 }
 
 #career {
-  background-color: palevioletred;
+  background-color:peru
   min-height: 10rem;
   padding: 1rem;
 }
@@ -79,7 +88,7 @@ blockquote + span {
 }
 
 #semester2 {
-  background-color: pink;
+  background-color: plum;
   min-height: 10rem;
   padding: 1rem;
 }
@@ -103,10 +112,11 @@ blockquote + span {
 #aifooter.container {
   text-align: center;
   min-height: auto;
+  padding: 1rem;
 }
 
 #subfooter {
-  background-color: darkorchid;
+  background-color: purple;
   min-height: 10rem;
   padding: 1rem;
   text-align: center;
@@ -119,14 +129,26 @@ audio {
   display: block;
 }
 
+@media screen and (min-width: 500px) {
+  body {
+    background-color: blueviolet;
+  }
+}
+
+/*tablet view*/
 @media screen (and min- width 600px;;) #pagecontent {
   background-color: red;
 }
 
 #career {
-  background-color: blue;
+  background-color: peru;
 }
 
+#logo {
+}
+
+
+/* Desktop View*/
 @media screen and (min-width: 1000px) {
   #pagecontent {
     background-color: blueviolet;
