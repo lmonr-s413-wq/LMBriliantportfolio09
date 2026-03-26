@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      /* Mobile First Design */
+      body {
+        background-color: antiquewhite;
+        color: rgb(168, 149, 124);
+        line-height: 1.7;
+        margin: 0;
+      }
+
+      h1 {
+        padding: 1rem;
+        text-align: center;
+        color: pink;
+      }
+
+      #pagefooter {
+
+        background-color: purple;
+        padding: 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+
+
+        i
+        {
+          color: pink;
+          font-size: 1.2 rem;
+          margin-left; .3rem;
+          margin-right: .3rem;
+        }
+
+          /* Font Awesome Styles */
+        i.fa-paw
+        {
+          transform: rotate(45deg);
+        }
+
+        @media screen and (min-width:700px) {
+          body {
+            background-color: purple;
+          }
+
+          #pagefooter
+          {
+
+            text-align: left;
+            justify-content: space-between;
+            flex-direction: row;
+          }
+    </style>
+  </head>
+
+  <body>
+    <h1>Footer</h1>
+    <footer id="pagefooter">
+      <p>
+        <i class="fa-solid fa-paw"></i> paws & Whiskers<br />
+        made with <i class="fa-solid fa-heart"></i> love for furry friends
+      </p>
+
+      <article>
+        <i class="fa-solid fa-phone"></i> 559-935-7520 <br />
+        <i class="fa-solid fa-envelope"></i>info@pawsandwhiskers.com <br />
+        <i class="fa-solid fa-location-dot"></i> 750 Van Ness st.,Coalinga,CA
+        93210
+      </article>
+    </footer>
+  </body>
+</html>
