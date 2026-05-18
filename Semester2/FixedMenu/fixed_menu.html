@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixed Menu</title>
+    <style>
+      /* Mobile First CSS */
+      html {
+        /* Temporary - Delete */
+        height: 200%;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: blueviolet;
+        margin: 0%;
+      }
+      #pageheader {
+        background-color: purple;
+        padding: 1rem;
+        /* Default */
+        position: static;
+      }
+
+      #logo {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        display: block;
+      }
+
+      #fblogoheader {
+        background-color: blue;
+      }
+
+      #pageheader h1 {
+        text-align: center;
+        color: white;
+        /* Remove */
+        background-color: pink;
+      }
+
+      #pageheader nav {
+        background-color: violet;
+        padding: 0.5rem;
+      }
+
+      pageheader ul {
+        padding: 0.5rem;
+        list-style-type: none;
+        background-color: gold;
+        /* Flexbox component */
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      #pageheader li {
+        text-align: center;
+        border: 1px solid white;
+        padding: 0.5rem;
+        background-color: blue;
+      }
+      #pageheader a {
+        color: white;
+        text-decoration: none;
+      }
+      /* None header elements */
+      main {
+        padding: 1rem;
+      }
+
+      p {
+        line-height: 1.5;
+        color: #333;
+      }
+
+      @media screen and (min-width: 650px) {
+        body {
+          background-color: red;
+        }
+        #pagheader {
+          position: fixed;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+        }
+        #pageheader {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          /* Flexbox Component */
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        #fblogoheader {
+          /* flexbox component */
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        #pageheader Ul {
+          flex-direction: row;
+          justify-content: center;
+        }
+
+        #pageheader nav {
+          min-width: 400px;
+        }
+
+        #logo {
+          width: 80px;
+          height: 80px;
+        }
+
+        main {
+          padding-top: 200px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="pageheader">
+      <!-- Start the logo and h1 -->
+      <div id="fblogoheader">
+        <img
+          src="images/paws_logo (1).png"
+          alt="Paws and Whiskers Logo"
+          id="logo"
+        />
+        <h1>Paws and Whiskers</h1>
+      </div>
+      <!-- End the logo and h1 -->
+
+      <!-- Start navigation -->
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Our Pets</a></li>
+          <li><a href="">Testimonials</a></li>
+          <li><a href="">About Us</a></li>
+        </ul>
+      </nav>
+      <!-- End Navigation -->
+    </header>
+
+    <main>
+      <h2>Fixed Menu</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo qui sit
+        quas architecto tenetur alias eveniet quisquam. Voluptatem voluptates
+        eos beatae, sed accusantium voluptatibus veniam saepe, quae dolores
+        vitae ea.
+      </p>
+    </main>
+  </body>
+</html>
