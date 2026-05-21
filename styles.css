@@ -31,7 +31,7 @@ body {
   width: 6.25rem;
   height: 6.25rem;
   background-color: purple;
-  background-image: url(images/MYlogo.png);
+  background-image: url(images/MYlogo.pdf);
   margin: auto;
 }
 
@@ -50,7 +50,7 @@ body {
   /* min-height: 10rem; */
   height: 60vh;
   padding: 1rem;
-  background-image: url(Images/graduation.png);
+  background-image: url(images/graduation.pdf)
   background-size: cover;
   /* aspect-ratio: 16 / 9; */
   background-position: center center;
