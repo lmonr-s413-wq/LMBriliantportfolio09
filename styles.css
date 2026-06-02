@@ -1,42 +1,55 @@
-/*Mobile view - Default  */
+/* Mobile View - Default */
 :root {
-  --primary-color: red;
-  --secondary-color: lime;
-  --tertiary-color: purple;
-  --main-font: arial;
+  --primary-color: #ff00ff;
+  --secondary-color: #00ffff;
+  --tertiary-color: #14001f;
+  --main-font: Arial, sans-serif;
+  --dark-bg: #1a1a2e;
+  --card-bg: rgba(20, 20, 40, 0.85);
 }
 
 html {
   scroll-behavior: smooth;
 }
+
 body {
-  background-color: var(--tertiary-color);
+  background: linear-gradient(to bottom, #14001f, #240046, #3c096c);
+  color: white;
+  font-family: var(--main-font);
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   min-height: 10rem;
   max-width: 75rem;
   margin: auto;
-  background-color: pink;
+  background-color: var(--card-bg);
   padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
 }
 
+/* HEADER */
 #pageheader {
-  background-color: var (rebeccapurple);
+  background-color: #1a1a2e;
   min-height: auto;
   padding: 1rem;
+  border-bottom: 3px solid var(--primary-color);
 }
 
 #logo {
   width: 6.25rem;
   height: 6.25rem;
-  background-color: purple;
+  background-color: transparent;
   background-image: url(images/MYlogo.pdf);
+  background-size: cover;
+  background-position: center;
   margin: auto;
 }
 
 #pageheader .container {
-  background-color:none;
+  background-color: transparent;
   min-height: auto;
   text-align: center;
 }
@@ -45,138 +58,194 @@ body {
   text-align: center;
 }
 
+#pageheader nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#pageheader nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#pageheader nav a:hover {
+  color: var(--primary-color);
+  text-shadow: 0 0 10px var(--primary-color);
+}
+
+/* HERO SECTION */
 #media {
-  background-color: purple;
-  /* min-height: 10rem; */
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(images/hero.png);
+
   height: 60vh;
   padding: 1rem;
-  background-image: url(images/graduation.pdf)
-  background-size: center cover;
-  /* aspect-ratio: 16 / 9; */
+  background-size: cover;
   background-position: center center;
+  border-bottom: 3px solid var(--secondary-color);
 }
 
+/* CAREER */
 #career {
-  background-color:peru
+  background-color: #2b124c;
   min-height: 10rem;
   padding: 1rem;
+  border-left: 5px solid var(--primary-color);
 }
 
+/* PAGE CONTENT */
 #pagecontent {
-  background-color: peru;
+  background-color: var(--card-bg);
   min-height: 10rem;
   padding: 1rem;
 }
 
+/* QUOTE */
 blockquote {
   padding: 1rem;
   width: 50%;
   margin: 0 auto;
   text-align: right;
   font-weight: bold;
+  color: var(--secondary-color);
 }
+
 blockquote + span {
-  padding: 1 rem;
+  padding: 1rem;
   display: block;
   width: 50%;
-  margin: 0% auto;
+  margin: 0 auto;
   text-align: right;
 }
 
+/* SEMESTERS */
 #semester1 {
-  background-color: plum;
+  background-color: #1e1e3f;
   min-height: 10rem;
   padding: 1rem;
+  border: 2px solid var(--secondary-color);
 }
 
 #semester2 {
-  background-color: plum;
+  background-color: #241734;
   min-height: 10rem;
   padding: 1rem;
+  border: 2px solid var(--primary-color);
 }
 
-#Worksamples{
-  background-color: purple;
+/* WORK SAMPLES */
+#Worksamples {
+  background-color: #12021f;
   min-height: 10rem;
   padding: 1rem;
+  border: 2px solid #9d4edd;
 }
+
 #Worksamples ul {
- list-style-type: none;
- 
+  list-style-type: none;
 }
 
-#Certifcates{
-  background-color: pink;
+/* CERTIFICATES */
+#Certifcates {
+  background-color: #2d1b00;
   min-height: 10rem;
   padding: 1rem;
-}
-#Certifcates ul{
-list-style-type: none;}
-
-certificates i{
-  color:palevioletred ;
-  font-size: .9rem;
-  padding-right: .7rem;
+  border: 2px solid gold;
+  box-shadow: 0 0 15px gold;
 }
 
+#Certifcates ul {
+  list-style-type: none;
+}
+
+#Certifcates i {
+  color: gold;
+  font-size: 0.9rem;
+  padding-right: 0.7rem;
+}
+
+/* FOOTERS */
 #pagefooter {
-  background-color: purple;
+  background-color: #0f0f1a;
   min-height: auto;
   padding: 1rem;
+  border-top: 2px solid var(--secondary-color);
 }
+
 #pagefooter .container {
   text-align: center;
   min-height: auto;
 }
 
 #aifooter {
-  background-color: purple;
+  background-color: #1a1a2e;
   padding: 1rem;
   min-height: auto;
+  text-align: center;
 }
 
-#aifooter.container {
+#aifooter .container {
   text-align: center;
   min-height: auto;
   padding: 1rem;
 }
 
 #subfooter {
-  background-color: purple;
+  background-color: #12021f;
   min-height: 10rem;
   padding: 1rem;
   text-align: center;
 }
 
+/* AUDIO */
 audio {
   border: 5px solid plum;
   background-color: white;
   margin: auto;
   display: block;
+  border-radius: 10px;
 }
 
+/* LINKS */
+a {
+  color: var(--secondary-color);
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+/* MOBILE */
 @media screen and (min-width: 500px) {
   body {
-    background-color: blueviolet;
+    background: linear-gradient(to bottom, #14001f, #240046, #3c096c);
   }
 }
 
-/*tablet view*/
-@media screen (and min- width 600px;;) #pagecontent {
-  background-color: red;
+/* TABLET VIEW */
+@media screen and (min-width: 600px) {
+  #pagecontent {
+    background-color: rgba(20, 20, 40, 0.9);
+  }
+
+  #career {
+    background-color: #2b124c;
+  }
 }
 
-#career {
-  background-color: peru;
-}
-
-#logo {
-}
-
-
-/* Desktop View*/
+/* DESKTOP VIEW */
 @media screen and (min-width: 1000px) {
   #pagecontent {
-    background-color: blueviolet;
+    background-color: rgba(20, 20, 40, 0.95);
+  }
+
+  #pageheader nav ul {
+    justify-content: center;
   }
 }
